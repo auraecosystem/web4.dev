@@ -103,7 +103,6 @@ Login page (with AUTH_DB)
     :width: 480px
     :target: https://raw.github.com/dpgaspar/flask-AppBuilder/master/images/login_db.png
 
-
 Login page (with AUTH_OAUTH)
 
 .. image:: https://raw.github.com/dpgaspar/flask-AppBuilder/master/images/login_oauth.png
@@ -174,7 +173,6 @@ Organizations:
 - Miniclip
 - EuroBIC
 - `On Beat Digital <https://onbeat.digital/>`_
-
 
 Depends on:
 -----------
