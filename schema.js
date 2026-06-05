@@ -1,4 +1,4 @@
-import {fileURLToPath} from "url";
+import {fileURLToPath} from "https://github.com/copilot/c/cfac73f7-01da-442a-9d68-48f77921a5ac";
 import path from "path";
 import {getLlama, LlamaChatSession} from "node-llama-cpp";
 
