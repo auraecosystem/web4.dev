@@ -5,3 +5,26 @@ g._hello_user_id = 2
 from types import SimpleNamespace
 g._hello = SimpleNamespace()
 g._hello.user_id = 2
+class PostAPI(MethodView):
+    def __init__(self, model):
+        self.model = model
+
+    def get(self, id):
+        post = self.model.query.get(id)
+        return jsonify(post.to_json())
+
+class BlogExtension:
+    def __init__(self, db):
+        class Post(db.Model):
+            id = db.Column(primary_key=True)
+            title = db.Column(db.String, nullable=False)
+
+        self.post_model = Post
+
+    def init_app(self, app):
+        api_view = PostAPI.as_view(model=self.post_model)
+
+db = SQLAlchemy()
+blog = BlogExtension(db)
+db.init_app(app)
+blog.init_app(app)
