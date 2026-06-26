@@ -1,0 +1,60 @@
+{
+  "name": "web4",
+  "version": "1.0.0",
+  "description": "Web4 AI-native decentralized platform",
+  "private": true,
+  "type": "module",
+  "author": "Seriki Yakub",
+  "license": "MIT",
+  "homepage": "https://github.com/Web4application/Web4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Web4application/Web4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Web4application/Web4/issues"
+  },
+  "keywords": [
+    "web4",
+    "ai",
+    "blockchain",
+    "decentralized",
+    "web",
+    "crypto",
+    "llm",
+    "agents",
+    "ipfs",
+    "p2p"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "clean": "rimraf dist",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.0",
+    "ethers": "^6.15.0",
+    "ipfs-http-client": "^60.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io-client": "^4.8.1",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.0",
+    "rimraf": "^6.0.1",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
