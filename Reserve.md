@@ -81,7 +81,7 @@ SQL Connect.
    for a custom resolver that can retrieve and update a user's public profile,
    stored in a datastore other than Cloud SQL:
 
-       #
+        #
    ```dataconnect/schema_resolver/schema.gql
 
        type PublicProfile {
