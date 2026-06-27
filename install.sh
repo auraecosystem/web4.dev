@@ -1,4 +1,4 @@
-mkdir myproj ; cd myproj
+mkdir my-proj ; cd my-proj
 npx -y firebase-tools@latest login --reauth
 npx -y firebase-tools@latest init dataconnect
 npx -y firebase-tools@latest deploy --only dataconnect
@@ -11,7 +11,14 @@ npx -y firebase-tools@latest \
 npx -y firebase-tools@latest \
           apps:sdkconfig web \
           -o web-app/src/firebase-config.json
-cd web-app
+cd web4-app
 npm i firebase \
             @tanstack/react-query \
             @tanstack-query-firebase/react
+
+mkdir tzdb
+cd tzdb
+wget https://www.iana.org/time-zones/repository/tzcode-latest.tar.gz
+wget https://www.iana.org/time-zones/repository/tzdata-latest.tar.gz
+gzip -dc tzcode-latest.tar.gz | tar -xf -
+gzip -dc tzdata-latest.tar.gz | tar -xf -
